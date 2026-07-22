@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta de Reformulação - Instituto Atleta Para Sempre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <!-- Logo -->
+            <div class="logo-container">
+                <a href="#topo" style="display:flex; align-items:center;">
+                    <img
+                        src="https://institutoatletaparasempre.org/imgs/logo_site.png"
+                        alt="Instituto Atleta Para Sempre"
+                        class="header-logo"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                    />
+                    <div class="logo-fallback" style="display:none;">
+                        <div class="logo-icon">A</div>
+                        <span class="logo-text">Atleta Para Sempre</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Nav Desktop -->
+            <nav class="desktop-nav" aria-label="Navegação principal">
+                <a href="#diagnostico" class="desktop-nav-link">Diagnóstico</a>
+                <a href="#modulos" class="desktop-nav-link">Módulos</a>
+                <a href="#investimento" class="desktop-nav-link">Investimento</a>
+                <a href="#garantias" class="desktop-nav-link">Garantias</a>
+            </nav>
+
+            <!-- Controles -->
+            <div class="controls">
+                <button class="btn btn-icon" id="theme-toggle" title="Alternar Tema" aria-label="Alternar Tema">
+                    <svg id="theme-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+                    </svg>
+                </button>
+                <button class="btn btn-ghost" onclick="window.print()">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                        <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                        <rect x="6" y="14" width="12" height="8"></rect>
+                    </svg>
+                    Imprimir PDF
+                </button>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero" id="topo">
+            <span class="badge">Proposta Tecnológica</span>
+            <h1>Reformulação Digital & <span>Portal de Transparência</span></h1>
+            <p class="lead">Estrutura robusta em WordPress com tema sob medida, área administrativa própria e sistemas integrados de gestão para o Instituto Atleta Para Sempre.</p>
+            <div class="hero-meta">
+                <div class="meta-field">
+                    <span class="meta-label">Elaborado para</span>
+                    <span class="meta-value">Instituto Atleta Para Sempre</span>
+                </div>
+                <div class="meta-field">
+                    <span class="meta-label">Validade da Proposta</span>
+                    <span class="meta-value">30 Dias (Julho/Agosto 2026)</span>
+                </div>
+                <div class="meta-field">
+                    <span class="meta-label">Tecnologias Foco</span>
+                    <span class="meta-value">WordPress, PHP 8.2+, MySQL, CSS3</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 01. Diagnóstico -->
+        <section id="diagnostico" style="margin-bottom: 3.5rem;">
+            <h2 class="section-title"><span>01.</span> Diagnóstico do Portal Atual</h2>
+            <p style="color: var(--muted-foreground); margin-bottom: 1.5rem; font-size: 0.85rem;">
+                A análise técnica do site atual (<a href="https://institutoatletaparasempre.org/" target="_blank" style="color: var(--sport-emerald);">institutoatletaparasempre.org</a>) indica a necessidade urgente de migração e reconstrução devido a riscos críticos de segurança e infraestrutura legada.
+            </p>
+
+            <!-- Alerta PHP -->
+            <div class="card" style="border-color: var(--destructive); background-color: rgba(239,68,68,0.05); margin-bottom: 1.5rem; padding: 1.25rem;">
+                <div style="display:flex; gap:0.75rem; align-items:flex-start;">
+                    <span style="font-size:1.25rem; color:#ef4444;">⚠️</span>
+                    <div>
+                        <h4 style="font-size:0.85rem; font-weight:700; color:#ef4444; margin-bottom:0.25rem; text-transform:uppercase; letter-spacing:0.05em;">Risco Crítico: PHP Legado (PHP 5.3)</h4>
+                        <p style="font-size:0.75rem; color:var(--muted-foreground); line-height:1.5;">
+                            O portal atual roda sob a versão <strong>PHP 5.3</strong>, obsoleta desde <strong>2014</strong>. Sem atualizações de segurança, o site está vulnerável a invasões e vazamento de dados de parceiros/candidatos, além de ter performance limitada.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="diagnostico-grid">
+                <div class="diag-item">
+                    <h3>Performance & SEO</h3>
+                    <p>Otimização de carregamento para dispositivos móveis e indexação rápida no Google rodando sob PHP 8.2+.</p>
+                </div>
+                <div class="diag-item" style="border-left-color: var(--sport-emerald);">
+                    <h3>Leis de Transparência</h3>
+                    <p>Área estruturada para publicação ágil de relatórios, editais e prestação de contas de incentivos fiscais.</p>
+                </div>
+                <div class="diag-item">
+                    <h3>Autonomia de Edição</h3>
+                    <p>Painel administrativo simplificado, seguro e intuitivo para a equipe interna — sem construtores pesados.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 02. Módulos & Escopo -->
+        <section id="modulos" style="margin-bottom: 3.5rem;">
+            <h2 class="section-title"><span>02.</span> Módulos & Escopo do Projeto</h2>
+            <div class="modules-list">
+
+                <div class="module-card">
+                    <div class="module-icon">📂</div>
+                    <div class="module-content">
+                        <h3>Projetos & Gestão de Documentos <span class="module-tag">Essencial</span></h3>
+                        <p>Cadastro de projetos esportivos e gestão documental transparente (Lei de Incentivo ao Esporte).</p>
+                        <ul class="features-bullets">
+                            <li>Cadastro de Projetos (Ano, Patrocinadores, Recursos, Imagens)</li>
+                            <li>Biblioteca de Documentos (PDF, DOCX) com filtros por projeto</li>
+                            <li>Categorização por Atas, Relatórios e Editais</li>
+                            <li>Exibição pública para prestação de contas</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-icon">🏢</div>
+                    <div class="module-content">
+                        <h3>Portal de Cadastro de Fornecedores <span class="module-tag">Personalizado</span></h3>
+                        <p>Captação estruturada de prestadores de serviços e fornecedores de materiais esportivos/operacionais.</p>
+                        <ul class="features-bullets">
+                            <li>Formulário com Razão Social, CNPJ, CNAE e Endereço</li>
+                            <li>Upload de certidões (FGTS, Receita Federal, Trabalhista)</li>
+                            <li>Categorização por nicho de atuação</li>
+                            <li>Banco de dados pesquisável na área administrativa</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-icon">📄</div>
+                    <div class="module-content">
+                        <h3>Banco de Currículos (Trabalhe Conosco) <span class="module-tag">Integrado</span></h3>
+                        <p>Canal para captação e gerenciamento de novos profissionais nos polos esportivos.</p>
+                        <ul class="features-bullets">
+                            <li>Formulário de candidatura com dados e especialidade</li>
+                            <li>Upload obrigatório de currículo em PDF</li>
+                            <li>Triagem rápida por cargo pretendido</li>
+                            <li>Adequação às normas da LGPD (Termo de Consentimento)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-icon">⚡</div>
+                    <div class="module-content">
+                        <h3>WordPress Administrativo Premium <span class="module-tag" style="background-color: var(--sport-emerald); color: #fff;">Exclusivo</span></h3>
+                        <p>Painel de gestão sob medida para o time do Instituto. Livre de plugins pesados e riscos de segurança.</p>
+                        <ul class="features-bullets">
+                            <li>Custom Post Types para controle de cada entidade</li>
+                            <li>Sem Page Builders complexos (blocos leves ou ACF)</li>
+                            <li>Carregamento em milissegundos e código limpo</li>
+                            <li>Estatísticas consolidadas dos módulos no Painel Principal</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 03. Investimento & Prazos -->
+        <section id="investimento" style="margin-bottom: 3.5rem;">
+            <h2 class="section-title"><span>03.</span> Investimento & Prazos</h2>
+
+            <!-- Callout Suporte Vitalício -->
+            <div class="callout-vitalicio">
+                <div class="callout-vitalicio-content">
+                    <div class="callout-vitalicio-icon">
+                        🛡️
+                    </div>
+                    <div>
+                        <span class="badge badge-emerald">Diferencial Exclusivo</span>
+                        <h3>Suporte & Garantia Vitalícia Contra Bugs</h3>
+                        <p>
+                            Segurança total para o Instituto. Todo o código do tema desenvolvido sob medida conta com garantia permanente. Caso surja qualquer bug técnico no futuro, a correção será realizada de forma 100% gratuita, por tempo indeterminado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabela Estática de Escopo + Financeiro -->
+            <div class="investment-box">
+                <div class="investment-grid">
+
+                    <!-- Coluna Entregáveis -->
+                    <div class="investment-deliverables">
+                        <h3>
+                            <span class="symbol-accent">✦</span> Escopo Integrado do Projeto
+                        </h3>
+                        <div class="deliverables-list">
+                            <div class="deliverable-item">
+                                <h4>Tema WordPress Personalizado & Core</h4>
+                                <p>Layout institucional responsivo, otimizações de SEO e área administrativa simplificada.</p>
+                            </div>
+                            <div class="deliverable-item">
+                                <h4>Módulo 1: Projetos & Documentos</h4>
+                                <p>Cadastro de projetos incentivados e publicação de atas, editais e relatórios.</p>
+                            </div>
+                            <div class="deliverable-item">
+                                <h4>Módulo 2: Cadastro de Fornecedores</h4>
+                                <p>Captação de prestadores de serviços com upload de certidões e painel de triagem.</p>
+                            </div>
+                            <div class="deliverable-item">
+                                <h4>Módulo 3: Banco de Currículos</h4>
+                                <p>Recebimento de currículos em PDF organizados por área de especialidade.</p>
+                            </div>
+                            <div class="deliverable-item last">
+                                <h4>
+                                    Configuração do Servidor
+                                    <span class="badge badge-blue">Bônus</span>
+                                </h4>
+                                <p>Migração, otimização no servidor do cliente e rotina de backups.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coluna Financeira -->
+                    <div class="investment-sidebar">
+                        <div>
+                            <div class="sidebar-label">Resumo Técnico</div>
+                            <div class="prazo-badge">
+                                Prazo máximo: 4 semanas
+                            </div>
+                            <div class="sidebar-summary-rows">
+                                <div class="sidebar-summary-row">
+                                    <span>Desenvolvimento Geral</span>
+                                    <span class="price-val">R$ 3.250</span>
+                                </div>
+                                <div class="sidebar-summary-row green">
+                                    <span>Configuração & Suporte Vitalício</span>
+                                    <span class="price-val">Grátis</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="total-row">
+                                <span>Investimento</span>
+                                <div class="price-stack">
+                                    <span class="price-old">R$ 3.250</span>
+                                    <span class="price-current">R$ 2.850</span>
+                                </div>
+                            </div>
+                            <div class="payment-terms-box">
+                                <div class="payment-terms-label">Condições de Pagamento</div>
+                                <div class="payment-terms-rows">
+                                    <div class="payment-row green">
+                                        <span class="payment-method">
+                                            À Vista (Pix)
+                                            <span class="discount-badge">− R$ 400</span>
+                                        </span>
+                                        <span class="price-val">R$ 2.850</span>
+                                    </div>
+                                    <div class="payment-row muted">
+                                        <span>Entrada + Entrega:</span>
+                                        <span class="price-val">2x R$ 1.625</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 04. Condições & Garantias -->
+        <section id="garantias" style="margin-bottom: 2rem;">
+            <h2 class="section-title"><span>04.</span> Condições & Garantias</h2>
+            <div class="conditions-grid">
+                <div class="condition-item">
+                    <h4>Suporte Vitalício</h4>
+                    <p>Garantia permanente contra bugs. Correções gratuitas e vitalícias de falhas técnicas no tema desenvolvido.</p>
+                </div>
+                <div class="condition-item">
+                    <h4>Propriedade Intelectual</h4>
+                    <p>O código-fonte completo do tema personalizado WordPress será entregue livre e desimpedido ao Instituto.</p>
+                </div>
+                <div class="condition-item">
+                    <h4>Treinamento da Equipe</h4>
+                    <p>Manual de uso em formato de vídeo-aulas simplificadas para capacitação no uso da área administrativa.</p>
+                </div>
+                <div class="condition-item" style="border-color: var(--sport-emerald);">
+                    <h4>Formas de Pagamento</h4>
+                    <p>À vista: <strong>R$ 2.850</strong> (Pix). Parcelado: <strong>R$ 1.625</strong> de entrada + <strong>R$ 1.625</strong> na entrega.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <h2>Vamos iniciar a transformação digital?</h2>
+            <p>Clique abaixo para aprovar a proposta e dar início ao alinhamento técnico do projeto.</p>
+            <div class="footer-buttons">
+                <button class="btn btn-primary" onclick="alert('Obrigado! Proposta pré-aprovada. Entraremos em contato.')">Aprovar Proposta</button>
+            </div>
+            <div class="credits">Instituto Atleta Para Sempre — 2026</div>
+        </footer>
+
+    </div>
+
+    <!-- Mobile Bottom Nav -->
+    <nav class="mobile-nav" aria-label="Navegação por seções">
+        <a href="#topo" class="mobile-nav-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <span>Início</span>
+        </a>
+        <a href="#diagnostico" class="mobile-nav-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <span>Diagnóstico</span>
+        </a>
+        <a href="#modulos" class="mobile-nav-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            <span>Módulos</span>
+        </a>
+        <a href="#investimento" class="mobile-nav-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <span>Investimento</span>
+        </a>
+        <a href="#garantias" class="mobile-nav-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Garantias</span>
+        </a>
+    </nav>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            const isDark = document.body.classList.contains('dark');
+            if (isDark) {
+                themeIcon.innerHTML = `<circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>`;
+            } else {
+                themeIcon.innerHTML = `<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>`;
+            }
+        });
+
+        // Mobile & Desktop nav: marcar seção ativa
+        const allNavLinks = document.querySelectorAll('.mobile-nav-item, .desktop-nav-link');
+        const sections = ['topo', 'diagnostico', 'modulos', 'investimento', 'garantias']
+            .map(id => document.getElementById(id))
+            .filter(Boolean);
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    allNavLinks.forEach(link => link.classList.remove('active'));
+                    document.querySelectorAll(`.mobile-nav-item[href="#${entry.target.id}"], .desktop-nav-link[href="#${entry.target.id}"]`)
+                        .forEach(el => el.classList.add('active'));
+                }
+            });
+        }, { threshold: 0.35 });
+
+        sections.forEach(s => observer.observe(s));
+
+    </script>
+
+</body>
+</html>
